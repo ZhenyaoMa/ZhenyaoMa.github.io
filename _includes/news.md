@@ -3,7 +3,7 @@
 <h2 style="margin: 60px 0px 10px;">News</h2>
 
 <ul>
-<!-- <li><strong>[Dec. 2023]</strong> I will serve as an Area Chair of <a href="https://eccv2024.ecva.net/">ECCV 2024</a>.</li>
+<li><strong>[Dec. 2023]</strong> I will serve as an Area Chair of <a href="https://eccv2024.ecva.net/">ECCV 2024</a>.</li>
 <li><strong>[Oct. 2023]</strong> I gave a talk on continual learning at <a href="https://bair.berkeley.edu/">BAIR, UC Berkeley</a>. </li>
 <li><strong>[Aug. 2023]</strong> I will serve as an Area Chair of <a href="https://cvpr.thecvf.com/">CVPR 2024</a>, <a href="https://iclr.cc/">ICLR 2024</a>, and <a href="https://aistats.org/aistats2024/">AISTATS 2024</a>.</li>
 <li><strong>[Aug. 2023]</strong> I will give a talk at <a href="https://engineering.purdue.edu/ChanGroup/comp_imaging_seminar.html">Purdue Computational Imaging Seminar</a>.</li>
@@ -19,7 +19,7 @@
 <li> <a href="javascript:toggle_vis('newsmore')">Show more</a> </li>
 <div id="newsmore" style="display:none"> 
   <li><strong>[Dec. 2022]</strong> <a href="https://www.bmvc2023.org">BMVC 2023</a> will be held in Aberdeen, UK, and I will serve as the Website Chair.</li>
-<!--  <li><strong>[Nov. 2022]</strong> Our paper about <a href="https://pure.mpg.de/rest/items/item_3478882_1/component/file_3478883/content">class-incremental learning</a> is accepted to <a href="https://aaai.org/Conferences/AAAI-23/">AAAI 2023</a>.</li>
+  <li><strong>[Nov. 2022]</strong> Our paper about <a href="https://pure.mpg.de/rest/items/item_3478882_1/component/file_3478883/content">class-incremental learning</a> is accepted to <a href="https://aaai.org/Conferences/AAAI-23/">AAAI 2023</a>.</li>
   <li><strong>[Oct. 2022]</strong> I am recognized as a top reviewer for <a href="https://neurips.cc/Conferences/2022/ProgramCommittee">NeurIPS 2022</a>.</li>
   <li><strong>[Aug. 2022]</strong> I will serve as an area chair of <a href="https://aistats.org/aistats2023/">AISTATS 2023</a>.</li>
   <li><strong>[Jun. 2022]</strong> I will serve as a student mentor of <a href="https://sites.google.com/view/cvpr-academy/">the CVPR Academy</a> at <a href="http://cvpr2022.thecvf.com/">CVPR 2022</a>.</li>
@@ -31,6 +31,6 @@
   <li><strong>[Feb. 2020]</strong> We will host the <a href="https://www.acmmmasia.org/2020/committee.html">ACM Multimedia Asia 2020</a> conference in Singapore!</li>
   <li><strong>[Sep. 2019]</strong> Our paper about <a href="https://papers.nips.cc/paper/2019/file/bf25356fd2a6e038f1a3a59c26687e80-Paper.pdf">few-shot learning</a> is accepted to <a href="https://nips.cc/Conferences/2019">NeurIPS 2019</a>.</li>
   <li><strong>[Mar. 2019]</strong> Our paper about <a href="https://openaccess.thecvf.com/content_CVPR_2019/papers/Sun_Meta-Transfer_Learning_for_Few-Shot_Learning_CVPR_2019_paper.pdf">few-shot learning</a> is accepted to <a href="http://cvpr2019.thecvf.com/">CVPR 2019</a>.</li>
-</div> -->
+</div> 
 
 </ul>
