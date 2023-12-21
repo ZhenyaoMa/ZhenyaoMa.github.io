@@ -9,7 +9,7 @@
 <!--   <li>Website Master, <a href="https://www.acmmmasia.org/2020/committee.html"><autocolor>ACM International Conference on Multimedia in Asia (MM Asia) 2020</autocolor></a></li>  -->
 </ul>
 
-<h4 style="margin:0 10px 0;">Area Chairs</h4>
+<!-- <h4 style="margin:0 10px 0;">Area Chairs</h4>
 
 <ul style="margin:0 0 5px;">
   <li><a href="https://eccv2024.ecva.net/"><autocolor>European Conference on Computer Vision (ECCV) 2024</autocolor></a></li>
@@ -18,9 +18,9 @@
   <li><a href="https://aistats.org/aistats2024/"><autocolor>International Conference on Artificial Intelligence and Statistics (AISTATS) 2023-2024</autocolor></a></li>
   <li><a href="https://bmvc2023.org/"><autocolor>The British Machine Vision Conference (BMVC) 2023</autocolor></a></li>
   <li><a href="https://www.auai.org/uai2023/"><autocolor>The Conference on Uncertainty in Artificial Intelligence (UAI) 2023</autocolor></a></li> -->
-</ul>
+<!--  </ul>  -->
 
-<h4 style="margin:0 10px 0;">Senior Program Committee</h4>
+<!--  <h4 style="margin:0 10px 0;">Senior Program Committee</h4>
 
 <ul style="margin:0 0 5px;">
   <li><a href="https://ijcai-21.org/"><autocolor>International Joint Conference on Artificial Intelligence (IJCAI) 2021</autocolor></a></li>
@@ -42,9 +42,9 @@
   <li><a href="https://mmasia2021.uqcloud.net/"><autocolor>ACM MM Asia 2020-2021</autocolor></a></li>
   <li><a href="http://www.acml-conf.org/2021/"><autocolor>ACML 2021</autocolor></a></li>  
   -->  
-</ul>
+<!-- </ul>  -->
 
-<h4 style="margin:0 10px 0;">Journal Reviewers</h4>
+<!--  <h4 style="margin:0 10px 0;">Journal Reviewers</h4>
 
 <ul style="margin:0 0 20px;">
  <li><a href="https://www.computer.org/csdl/journal/tp"><autocolor>IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)</autocolor></a></li>
@@ -53,8 +53,8 @@
   <li><a href="https://www.computer.org/csdl/journal/tk"><autocolor>IEEE Transactions on Knowledge and Data Engineering (TKDE)</autocolor></a></li>
   <li><a href="https://signalprocessingsociety.org/publications-resources/ieee-transactions-multimedia"><autocolor>IEEE Transactions on Multimedia (TMM)</autocolor></a></li>
   <li><a href="https://ieee-cas.org/publications/ieee-transactions-circuits-and-systems-video-technology"><autocolor>IEEE Transactions on Circuits and Systems for Video Technology (TCSVT)</autocolor></a></li>
-  <li><a href="https://cis.ieee.org/publications/t-neural-networks-and-learning-systems"><autocolor>IEEE Transactions on Neural Networks and Learning Systems (TNNLS)</autocolor></a></li>  -->
-  <li><a href="https://dl.acm.org/journal/tomm"><autocolor>ACM Transactions on Multimedia Computing, Communications, and Applications (TOMM)</autocolor></a></li>
+  <li><a href="https://cis.ieee.org/publications/t-neural-networks-and-learning-systems"><autocolor>IEEE Transactions on Neural Networks and Learning Systems (TNNLS)</autocolor></a></li>  --> -->
+ <!--   <li><a href="https://dl.acm.org/journal/tomm"><autocolor>ACM Transactions on Multimedia Computing, Communications, and Applications (TOMM)</autocolor></a></li> -->
   <!--
   <li><a href="https://www.journals.elsevier.com/neural-networks"><autocolor>Neural Networks</autocolor></a></li>
   <li><a href="https://www.springer.com/journal/10994"><autocolor>Machine Learning</autocolor></a></li>
@@ -64,4 +64,4 @@
   <li><a href="https://ieeeaccess.ieee.org/"><autocolor>IEEE Access</autocolor></a></li>
   <li><a href="http://cjc.ict.ac.cn/"><autocolor>Chinese Journal of Computers</autocolor></a></li>
   -->
-</ul>
+ <!--  </ul>  -->
