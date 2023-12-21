@@ -6,6 +6,6 @@
 <br />
 <strong>Office Location:</strong> Malone Hall 248
 <br />
-<strong>Email:</strong> <email>zhenyaoma@163.com or mazhenyao2002@gmail.com</email>
+<strong>Email:</strong> <email>mazhenyao2002@gmail.com</email>
 <br />
 <strong>Phone:</strong> (857) 209-8688</p>
