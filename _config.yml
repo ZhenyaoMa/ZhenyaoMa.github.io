@@ -31,8 +31,8 @@ favicon: ./assets/img/faviconplus.png
 favicon_dark: ./assets/img/faviconplus.png
 
 # Footnotes
-footnote: Feel free to use my website's source code.
-footnote_link: https://github.com/yaoyao-liu/minimal-light
+# footnote: Feel free to use my website's source code.
+# footnote_link: https://github.com/yaoyao-liu/minimal-light
 
 # Analytics
 # Please remove the following lines about analytics services if you fork my project. 
