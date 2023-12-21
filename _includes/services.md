@@ -44,7 +44,7 @@
   -->
 </ul>
 
-<h4 style="margin:0 10px 0;">Journal Reviewers</h4>
+ <!-- <h4 style="margin:0 10px 0;">Journal Reviewers</h4>
 
 <ul style="margin:0 0 20px;">
   <li><a href="https://www.computer.org/csdl/journal/tp"><autocolor>IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)</autocolor></a></li>
@@ -63,5 +63,5 @@
   <li><a href="https://link.springer.com/journal/11042"><autocolor>Multimedia Tools and Applications</autocolor></a></li>
   <li><a href="https://ieeeaccess.ieee.org/"><autocolor>IEEE Access</autocolor></a></li>
   <li><a href="http://cjc.ict.ac.cn/"><autocolor>Chinese Journal of Computers</autocolor></a></li>
-  -->
-</ul>
+  -->   -->
+ <!-- </ul>  -->
