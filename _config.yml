@@ -9,7 +9,7 @@ email: zhenyaoma@stu.xmu.edu.cn  zhenyaoma@163.com
 # Search Engine Optimization (SEO)
 keywords: xxx
 canonical: https:
-description: .
+description: xxx
 
 # The option is used to enable the Johns Hopkins template.
 enable_hopkins_logo: true
@@ -19,11 +19,11 @@ enable_last_update: false
 
 # Links
 link_type: icon #text/icon
-google_scholar: https:
-cv_link: https:
-github_link: https:/
-linkedin: https:/
-twitter: https://
+# google_scholar: https:
+# cv_link: https:
+# github_link: https:/
+# linkedin: https:/
+# twitter: https://
 
 # Images 
 avatar: ./assets/img/avatar.jpg
