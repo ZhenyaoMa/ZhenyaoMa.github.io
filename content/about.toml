@@ -15,6 +15,13 @@ source = "bio.md"
 title = "Welcome!"
 
 [[sections]]
+id = "research"
+type = "markdown"
+source = "research.md"
+title = "My Research"
+
+
+[[sections]]
 id = "featured_publications"
 type = "publications"
 title = "Selected Publications"
