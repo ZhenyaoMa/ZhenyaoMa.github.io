@@ -1,35 +1,23 @@
 [site]
 title = "Zhenyao Ma"
-description = "Researcher."
+description = "Researcher at Plokerm Lab. M.Res. Student, School of Economics, Xiamen University."
 favicon = "/favicon.svg"
 last_updated = "November 18, 2025"
 
 [author]
 name = "Zhenyao Ma"
-title = "Researcher"
-institution = "Plokerm Lab & Xiamen University"
+title = "Researcher, Plokerm Lab"
+institution = "M.Res. Student, School of Economics, Xiamen University"
 avatar = "/bio.jpg"
 
 [social]
-# Contact information (leave blank or delete to hide)
-
-email = "john.doe@example.com"
-location = "City, Country"
-location_url = "https://maps.google.com"
-location_details = [
-  "Room 123, Science Building,",
-  "University Avenue, City, Country"
-]
+email = "zhenyaoma@stu.xmu.edu.cn; zhenyaoma@163.com"
 google_scholar = "https://scholar.google.com"
-orcid = "https://orcid.org"
-github = "https://github.com"
+github = "https://github.com/ZhenyaoMa"
 linkedin = "https://linkedin.com"
 
 [features]
-# Show a like button on the about page
 enable_likes = true
-
-# Display all subpages on a single page
 enable_one_page_mode = false
 
 [[navigation]]
