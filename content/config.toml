@@ -26,6 +26,13 @@ type = "page"
 target = "about"
 href = "/"
 
+[[sections]]
+id = "research"
+type = "markdown"
+source = "research.md"
+title = "Research"
+
+
 # [[navigation]]
 # title = "Publications"
 # type = "page"
