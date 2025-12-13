@@ -12,9 +12,9 @@ avatar = "/bio.jpg"
 
 [social]
 email = "zhenyaoma@stu.xmu.edu.cn; zhenyaoma@163.com"
-google_scholar = "https://scholar.google.com"
-github = "https://github.com/ZhenyaoMa"
-linkedin = "https://linkedin.com"
+openreview = "https://openreview.net/profile?id=%7EMa_Zhenyao1"
+# google_scholar = "https://scholar.google.com"
+# github = "https://github.com/ZhenyaoMa"
 
 [features]
 enable_likes = true
