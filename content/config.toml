@@ -27,7 +27,7 @@ target = "about"
 href = "/"
 
 [[navigation]]
-title = "Research"
+title = "Research Statement"
 type = "page"
 target = "research"
 href = "/research"
