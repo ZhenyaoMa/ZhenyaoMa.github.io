@@ -26,11 +26,11 @@ type = "page"
 target = "about"
 href = "/"
 
-[[navigation]]
-title = "Publications"
-type = "page"
-target = "publications"
-href = "/publications"
+# [[navigation]]
+# title = "Publications"
+# type = "page"
+# target = "publications"
+# href = "/publications"
 
 # [[navigation]]
 # title = "Teaching"
