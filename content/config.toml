@@ -1,13 +1,13 @@
 [site]
-title = "Jiale Liu"
-description = "PhD student at the University of Example."
+title = "Zhenyao Ma"
+description = "Researcher."
 favicon = "/favicon.svg"
 last_updated = "November 18, 2025"
 
 [author]
-name = "Jiale Liu"
-title = "PhD Student"
-institution = "University of Example"
+name = "Zhenyao Ma"
+title = "Researcher"
+institution = "Plokerm Lab & Xiamen University"
 avatar = "/bio.jpg"
 
 [social]
