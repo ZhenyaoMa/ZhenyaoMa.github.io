@@ -1,0 +1,30 @@
+name: Fix package-lock
+
+on:
+  workflow_dispatch:
+
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Remove old lock
+        run: |
+          rm -rf node_modules package-lock.json
+
+      - name: Install and regenerate lock
+        run: npm install
+
+      - name: Commit updated lock
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add package-lock.json
+          git commit -m "fix: regenerate package-lock for CI" || echo "Nothing to commit"
+          git push
