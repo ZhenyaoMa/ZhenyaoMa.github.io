@@ -1,5 +1,2 @@
-I am a PhD student at the School of Science, University of Example, advised by [Prof. Advisor One](https://example.com) and [Dr. Advisor Two](https://example.com).
-
-Prior to this, I obtained a BSc degree with First Class Honours in Natural Science from the University of Example.
-
-My current research focuses on investigating the mathematical principles of natural philosophy.
+I am Zhenyao Ma (马镇尧, Jen-yow Ma), a researcher in human behavior and complex systems.
+My research focuses on behavioral science, complex social systems, and machine learning.
