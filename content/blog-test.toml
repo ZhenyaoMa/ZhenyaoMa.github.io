@@ -1,10 +1,1 @@
-type = "text"
-title = "Blog Test"
 
-content = """
-# Test
-
-Markdown
-- item 1
-- item 2
-"""
