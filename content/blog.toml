@@ -6,7 +6,7 @@ subtitle = "Notes, ideas, and drafts."
 [[cards]]
 title = "Test"
 description = "A short note on why Test."
-href = "/content/blog/blog-test"
+href = "/blog-test"
 
 # [[cards]]
 # title = "ICLR Camera-ready: author name tweaks"
