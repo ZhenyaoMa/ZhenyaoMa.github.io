@@ -1,6 +1,6 @@
-type = "card"
-title = "Blog"
-subtitle = "Notes, ideas, and drafts."
+# type = "card"
+# title = "Blog"
+# subtitle = "Notes, ideas, and drafts."
 
 # [[cards]]
 # title = "Test"
