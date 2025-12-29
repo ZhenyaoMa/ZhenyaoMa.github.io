@@ -1,8 +1,6 @@
-# type = "card"
-# title = "Blog"
-# subtitle = "Notes, ideas, and drafts."
-
-# [[cards]]
-# title = "Test"
-# description = "A short note on why Test."
-# href = "/blog-test"
+type = "card"
+title = "Blog"
+[[cards]]
+title = "Coming Soon"
+description = "Posts will appear here."
+href = "/"
