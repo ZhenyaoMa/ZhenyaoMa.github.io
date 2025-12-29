@@ -2,7 +2,10 @@ type = "card"
 title = "Blog"
 subtitle = "Notes, ideas, and drafts."
 
-[[cards]]
-title = "Test"
-description = "A short note on why Test."
-href = "/blog-test"
+[[items]]
+title = "Coming Soon"
+subtitle = "Posts will appear here."
+date = "2025"
+content = "Placeholder entry for build sanity."
+href = "/"
+
