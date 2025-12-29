@@ -1,18 +1,8 @@
-# type = "card"
-# title = "Blog"
+type = "card"
+title = "Blog"
+subtitle = "Notes, ideas, and drafts."
 
-# [[cards]]
-# title = "Coming Soon"
-# description = "Posts will appear here."
-# href = "/"
-
-# [[cards]]
-# title = "Test"
-# description = "A short note on why Test."
-# href = "/blog-test"
-
-# [[cards]]
-# title = "ICLR Camera-ready: author name tweaks"
-# description = "What can/can’t be changed and common pitfalls."
-# href = "/blog/iclr-camera-ready-author"
-
+[[cards]]
+title = "Test"
+description = "A short note on why Test."
+href = "/blog-test"
