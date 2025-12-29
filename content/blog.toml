@@ -1,8 +1,8 @@
 type = "card"
 title = "Blog"
+subtitle = "Notes, ideas, and drafts."
 
-[[items]]
-title = "Reviewer"
-subtitle = "Journal Name"
-date = "2024"
-content = "Reviewed papers for..."
+[[cards]]
+title = "Test"
+description = "A short note on why Test."
+href = "/blog-test"
