@@ -1,1 +1,4 @@
+type = "text"
+title = "Blog Test"
+content_file = "blog-test.md"
 
