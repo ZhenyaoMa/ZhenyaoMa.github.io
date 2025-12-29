@@ -1,1 +1,15 @@
+# content/blog.toml
+type = "card"
+title = "Blog"
+subtitle = "Notes, ideas, and drafts."
+
+[[cards]]
+title = "Test"
+description = "A short note on why Test."
+href = "/blog/blog-test"
+
+# [[cards]]
+# title = "ICLR Camera-ready: author name tweaks"
+# description = "What can/can’t be changed and common pitfalls."
+# href = "/blog/iclr-camera-ready-author"
 
