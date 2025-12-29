@@ -32,6 +32,11 @@ type = "page"
 target = "research"
 href = "/research"
 
+[[navigation]]
+title = "Blog"
+type = "page"
+target = "blog"
+href = "/blog"
 
 # [[navigation]]
 # title = "Publications"
