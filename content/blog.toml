@@ -1,7 +1,8 @@
 type = "card"
 title = "Blog"
 
-# [[cards]]
-# title = "Coming Soon"
-# description = "Posts will appear here."
-# href = "/"
+[[items]]
+title = "Reviewer"
+subtitle = "Journal Name"
+date = "2024"
+content = "Reviewed papers for..."
