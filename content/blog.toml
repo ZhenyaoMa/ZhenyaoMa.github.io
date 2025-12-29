@@ -1,7 +1,10 @@
-# content/blog.toml
 type = "card"
 title = "Blog"
-subtitle = "Notes, ideas, and drafts."
+
+[[cards]]
+title = "Coming Soon"
+description = "Posts will appear here."
+href = "/"
 
 # [[cards]]
 # title = "Test"
