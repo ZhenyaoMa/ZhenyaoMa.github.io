@@ -1,4 +1,4 @@
 type = "text"
 title = "Test"
-content = "blog-test.md"
+content = "blogs/blog-test.md"
 
