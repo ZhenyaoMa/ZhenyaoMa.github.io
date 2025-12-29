@@ -4,7 +4,7 @@ title = "Blog Test"
 content = """
 # Test
 
-这里是正文（Markdown）。
+Markdown
 - item 1
 - item 2
 """
