@@ -3,10 +3,10 @@ type = "card"
 title = "Blog"
 subtitle = "Notes, ideas, and drafts."
 
-[[cards]]
-title = "Test"
-description = "A short note on why Test."
-href = "/blog-test"
+# [[cards]]
+# title = "Test"
+# description = "A short note on why Test."
+# href = "/blog-test"
 
 # [[cards]]
 # title = "ICLR Camera-ready: author name tweaks"
