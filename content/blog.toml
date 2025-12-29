@@ -1,6 +1,7 @@
 type = "card"
 title = "Blog"
-[[cards]]
-title = "Coming Soon"
-description = "Posts will appear here."
-href = "/"
+
+# [[cards]]
+# title = "Coming Soon"
+# description = "Posts will appear here."
+# href = "/"
