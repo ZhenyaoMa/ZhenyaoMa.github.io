@@ -1,4 +1,3 @@
 type = "text"
 title = "Blog Test"
-content_file = "blog-test.md"
-
+source = "blog-test.md"
