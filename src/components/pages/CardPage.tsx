@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 'use client';
 
 import { motion } from 'framer-motion';
