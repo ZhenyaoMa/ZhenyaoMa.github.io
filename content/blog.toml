@@ -1,11 +1,6 @@
-type = "card"
+type = "text"
 title = "Blog"
 subtitle = "Notes, ideas, and drafts."
+source = "blog.md"
 
-[[items]]
-title = "Coming Soon"
-subtitle = "Posts will appear here."
-date = "2025"
-content = "Placeholder entry for build sanity."
-href = "/blog-test"
 
