@@ -14,14 +14,36 @@ import {
 
 import { Metadata } from 'next';
 
+import fs from "fs";
+import path from "path";
+
 export function generateStaticParams() {
     const config = getConfig();
-    return config.navigation
-        .filter(nav => nav.type === 'page' && nav.target !== 'about') // 'about' is handled by root page
-        .map(nav => ({
-            slug: nav.target,
-        }));
+    const contentDir = path.join(process.cwd(), "content");
+
+    // 1️⃣ 从 content/*.toml 扫描所有“页面配置”
+    const slugsFromContent = fs
+        .readdirSync(contentDir)
+        .filter((file) => file.endsWith(".toml"))
+        .filter((file) => !["config.toml"].includes(file)) // 排除全局配置
+        .filter((file) => {
+            // 只把真正的“页面 toml”当成路由
+            const raw = fs.readFileSync(path.join(contentDir, file), "utf-8");
+            return /^\s*type\s*=/.test(raw);
+        })
+        .map((file) => file.replace(".toml", ""));
+
+    // 2️⃣ 原来 navigation 里的页面（保留，防止行为变化）
+    const slugsFromNav = config.navigation
+        .filter(nav => nav.type === 'page' && nav.target !== 'about')
+        .map(nav => nav.target);
+
+    // 3️⃣ 合并 + 去重
+    const slugs = Array.from(new Set([...slugsFromNav, ...slugsFromContent]));
+
+    return slugs.map((slug) => ({ slug }));
 }
+
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
     const { slug } = await params;
