@@ -1,6 +1,10 @@
-type = "text"
+type = "card"
 title = "Blog"
-subtitle = "Notes, ideas, and drafts."
-source = "blog.md"
+description = "Notes, ideas, and drafts."
 
-
+[[items]]
+title = "Coming Soon"
+subtitle = "Posts will appear here."
+date = "2025"
+content = "Placeholder entry for build sanity."
+link = "/blog-test"
