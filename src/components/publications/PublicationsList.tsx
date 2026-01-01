@@ -272,7 +272,7 @@ export default function PublicationsList({ config, publications, embedded = fals
                                                 Abstract
                                             </button>
                                         )}
-                                        {pub.bibtex && (
+                                        /* {pub.bibtex && (
                                             <button
                                                 onClick={() => setExpandedBibtexId(expandedBibtexId === pub.id ? null : pub.id)}
                                                 className={cn(
@@ -285,7 +285,7 @@ export default function PublicationsList({ config, publications, embedded = fals
                                                 <BookOpenIcon className="h-3 w-3 mr-1.5" />
                                                 BibTeX
                                             </button>
-                                        )}
+                                        )} */
                                     </div>
 
                                     <AnimatePresence>
