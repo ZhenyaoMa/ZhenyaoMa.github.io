@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useMemo, useEffect } from 'react';
+import { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
 import {
@@ -55,14 +55,6 @@ export default function PublicationsList({ config, publications, embedded = fals
       return matchesSearch && matchesYear && matchesType;
     });
   }, [publications, searchQuery, selectedYear, selectedType]);
-
-  // ✅ 如果当前展开 BibTeX 的条目被设置为 hidden_bib=true，则自动收起
-  useEffect(() => {
-    if (!expandedBibtexId) return;
-    const pub = filteredPublications.find(p => p.id === expandedBibtexId);
-    if (!pub) return;
-    if (pub.hidden_bib) setExpandedBibtexId(null);
-  }, [expandedBibtexId, filteredPublications]);
 
   return (
     <motion.div
@@ -197,170 +189,180 @@ export default function PublicationsList({ config, publications, embedded = fals
             No publications found matching your criteria.
           </div>
         ) : (
-          filteredPublications.map((pub, index) => {
-            const canShowBibtex = !!pub.bibtex && !pub.hidden_bib; // ✅ 核心：hidden_bib=true 时禁用 BibTeX UI
-
-            return (
-              <motion.div
-                key={pub.id}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.4, delay: 0.1 * index }}
-                className="bg-white dark:bg-neutral-900 p-6 rounded-xl shadow-sm border border-neutral-200 dark:border-neutral-800 hover:shadow-md transition-all duration-200"
-              >
-                <div className="flex flex-col md:flex-row gap-6">
-                  {pub.preview && (
-                    <div className="w-full md:w-48 flex-shrink-0">
-                      <div className="aspect-video md:aspect-[4/3] relative rounded-lg overflow-hidden bg-neutral-100 dark:bg-neutral-800">
-                        <Image
-                          src={`/papers/${pub.preview}`}
-                          alt={pub.title}
-                          fill
-                          className="object-cover"
-                          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                        />
-                      </div>
+          filteredPublications.map((pub, index) => (
+            <motion.div
+              key={pub.id}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.4, delay: 0.1 * index }}
+              className="bg-white dark:bg-neutral-900 p-6 rounded-xl shadow-sm border border-neutral-200 dark:border-neutral-800 hover:shadow-md transition-all duration-200"
+            >
+              <div className="flex flex-col md:flex-row gap-6">
+                {pub.preview && (
+                  <div className="w-full md:w-48 flex-shrink-0">
+                    <div className="aspect-video md:aspect-[4/3] relative rounded-lg overflow-hidden bg-neutral-100 dark:bg-neutral-800">
+                      <Image
+                        src={`/papers/${pub.preview}`}
+                        alt={pub.title}
+                        fill
+                        className="object-cover"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                      />
                     </div>
+                  </div>
+                )}
+
+                <div className="flex-grow">
+                  <h3 className={`${embedded ? "text-lg" : "text-xl"} font-semibold text-primary mb-2 leading-tight`}>
+                    {pub.title}
+                  </h3>
+
+                  <p className={`${embedded ? "text-sm" : "text-base"} text-neutral-600 dark:text-neutral-400 mb-2`}>
+                    {pub.authors.map((author, idx) => (
+                      <span key={idx}>
+                        <span
+                          className={`${author.isHighlighted ? 'font-semibold text-accent' : ''} ${
+                            author.isCoAuthor
+                              ? `underline underline-offset-4 ${author.isHighlighted ? 'decoration-accent' : 'decoration-neutral-400'}`
+                              : ''
+                          }`}
+                        >
+                          {author.name}
+                        </span>
+                        {author.isCorresponding && (
+                          <sup className={`ml-0 ${author.isHighlighted ? 'text-accent' : 'text-neutral-600 dark:text-neutral-400'}`}>†</sup>
+                        )}
+                        {idx < pub.authors.length - 1 && ', '}
+                      </span>
+                    ))}
+                  </p>
+
+                  <p className="text-sm font-medium text-neutral-800 dark:text-neutral-600 mb-3">
+                    {pub.journal || pub.conference} {pub.year}
+                  </p>
+
+                  {pub.description && (
+                    <p className="text-sm text-neutral-600 dark:text-neutral-500 mb-4 line-clamp-3">
+                      {pub.description}
+                    </p>
                   )}
 
-                  <div className="flex-grow">
-                    <h3 className={`${embedded ? "text-lg" : "text-xl"} font-semibold text-primary mb-2 leading-tight`}>
-                      {pub.title}
-                    </h3>
-
-                    <p className={`${embedded ? "text-sm" : "text-base"} text-neutral-600 dark:text-neutral-400 mb-2`}>
-                      {pub.authors.map((author, idx) => (
-                        <span key={idx}>
-                          <span
-                            className={`${author.isHighlighted ? 'font-semibold text-accent' : ''} ${
-                              author.isCoAuthor
-                                ? `underline underline-offset-4 ${author.isHighlighted ? 'decoration-accent' : 'decoration-neutral-400'}`
-                                : ''
-                            }`}
-                          >
-                            {author.name}
-                          </span>
-                          {author.isCorresponding && (
-                            <sup className={`ml-0 ${author.isHighlighted ? 'text-accent' : 'text-neutral-600 dark:text-neutral-400'}`}>†</sup>
-                          )}
-                          {idx < pub.authors.length - 1 && ', '}
-                        </span>
-                      ))}
-                    </p>
-
-                    <p className="text-sm font-medium text-neutral-800 dark:text-neutral-600 mb-3">
-                      {pub.journal || pub.conference} {pub.year}
-                    </p>
-
-                    {pub.description && (
-                      <p className="text-sm text-neutral-600 dark:text-neutral-500 mb-4 line-clamp-3">
-                        {pub.description}
-                      </p>
+                  <div className="flex flex-wrap gap-2 mt-auto">
+                    {pub.doi && (
+                      <a
+                        href={`https://doi.org/${pub.doi}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center px-3 py-1 rounded-md text-xs font-medium bg-neutral-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 hover:bg-accent hover:text-white transition-colors"
+                      >
+                        DOI
+                      </a>
                     )}
 
-                    <div className="flex flex-wrap gap-2 mt-auto">
-                      {pub.doi && (
-                        <a
-                          href={`https://doi.org/${pub.doi}`}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="inline-flex items-center px-3 py-1 rounded-md text-xs font-medium bg-neutral-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 hover:bg-accent hover:text-white transition-colors"
-                        >
-                          DOI
-                        </a>
-                      )}
+                    {pub.code && (
+                      <a
+                        href={pub.code}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center px-3 py-1 rounded-md text-xs font-medium bg-neutral-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 hover:bg-accent hover:text-white transition-colors"
+                      >
+                        Code
+                      </a>
+                    )}
 
-                      {pub.code && (
-                        <a
-                          href={pub.code}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="inline-flex items-center px-3 py-1 rounded-md text-xs font-medium bg-neutral-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 hover:bg-accent hover:text-white transition-colors"
-                        >
-                          Code
-                        </a>
-                      )}
+                    {pub.abstract && (
+                      <button
+                        onClick={() => setExpandedAbstractId(expandedAbstractId === pub.id ? null : pub.id)}
+                        className={cn(
+                          "inline-flex items-center px-3 py-1 rounded-md text-xs font-medium transition-colors",
+                          expandedAbstractId === pub.id
+                            ? "bg-accent text-white"
+                            : "bg-neutral-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 hover:bg-accent hover:text-white"
+                        )}
+                      >
+                        <DocumentTextIcon className="h-3 w-3 mr-1.5" />
+                        Abstract
+                      </button>
+                    )}
 
-                      {pub.abstract && (
-                        <button
-                          onClick={() => setExpandedAbstractId(expandedAbstractId === pub.id ? null : pub.id)}
-                          className={cn(
-                            "inline-flex items-center px-3 py-1 rounded-md text-xs font-medium transition-colors",
-                            expandedAbstractId === pub.id
-                              ? "bg-accent text-white"
-                              : "bg-neutral-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 hover:bg-accent hover:text-white"
-                          )}
-                        >
-                          <DocumentTextIcon className="h-3 w-3 mr-1.5" />
-                          Abstract
-                        </button>
-                      )}
-
-                      {/* ✅ 只有 canShowBibtex 才显示 BibTeX 按钮 */}
-                      {canShowBibtex && (
-                        <button
-                          onClick={() => setExpandedBibtexId(expandedBibtexId === pub.id ? null : pub.id)}
-                          className={cn(
-                            "inline-flex items-center px-3 py-1 rounded-md text-xs font-medium transition-colors",
-                            expandedBibtexId === pub.id
-                              ? "bg-accent text-white"
-                              : "bg-neutral-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 hover:bg-accent hover:text-white"
-                          )}
-                        >
-                          <BookOpenIcon className="h-3 w-3 mr-1.5" />
-                          BibTeX
-                        </button>
-                      )}
-                    </div>
-
-                    <AnimatePresence>
-                      {expandedAbstractId === pub.id && pub.abstract ? (
-                        <motion.div
-                          key="abstract"
-                          initial={{ opacity: 0, height: 0 }}
-                          animate={{ opacity: 1, height: 'auto' }}
-                          exit={{ opacity: 0, height: 0 }}
-                          className="overflow-hidden mt-4"
-                        >
-                          <div className="bg-neutral-50 dark:bg-neutral-800 rounded-lg p-4 border border-neutral-200 dark:border-neutral-700">
-                            <p className="text-sm text-neutral-600 dark:text-neutral-500 leading-relaxed">
-                              {pub.abstract}
-                            </p>
-                          </div>
-                        </motion.div>
-                      ) : null}
-
-                      {/* ✅ 只有 canShowBibtex 才渲染 BibTeX 展开区（含复制按钮） */}
-                      {canShowBibtex && expandedBibtexId === pub.id ? (
-                        <motion.div
-                          key="bibtex"
-                          initial={{ opacity: 0, height: 0 }}
-                          animate={{ opacity: 1, height: 'auto' }}
-                          exit={{ opacity: 0, height: 0 }}
-                          className="overflow-hidden mt-4"
-                        >
-                          <div className="relative bg-neutral-50 dark:bg-neutral-800 rounded-lg p-4 border border-neutral-200 dark:border-neutral-700">
-                            <pre className="text-xs text-neutral-600 dark:text-neutral-500 overflow-x-auto whitespace-pre-wrap font-mono">
-                              {pub.bibtex}
-                            </pre>
-                            <button
-                              onClick={() => {
-                                navigator.clipboard.writeText(pub.bibtex || '');
-                              }}
-                              className="absolute top-2 right-2 p-1.5 rounded-md bg-white dark:bg-neutral-700 text-neutral-500 hover:text-accent shadow-sm border border-neutral-200 dark:border-neutral-600 transition-colors"
-                              title="Copy to clipboard"
-                            >
-                              <ClipboardDocumentIcon className="h-4 w-4" />
-                            </button>
-                          </div>
-                        </motion.div>
-                      ) : null}
-                    </AnimatePresence>
+                    {/*
+                      ===== BibTeX toggle button (DISABLED) =====
+                      Re-enable:
+                      1) remove this comment block
+                      2) also re-enable the BibTeX panel below
+                    */}
+                    {/*
+                    {pub.bibtex && (
+                      <button
+                        onClick={() => setExpandedBibtexId(expandedBibtexId === pub.id ? null : pub.id)}
+                        className={cn(
+                          "inline-flex items-center px-3 py-1 rounded-md text-xs font-medium transition-colors",
+                          expandedBibtexId === pub.id
+                            ? "bg-accent text-white"
+                            : "bg-neutral-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 hover:bg-accent hover:text-white"
+                        )}
+                      >
+                        <BookOpenIcon className="h-3 w-3 mr-1.5" />
+                        BibTeX
+                      </button>
+                    )}
+                    */}
                   </div>
+
+                  <AnimatePresence>
+                    {expandedAbstractId === pub.id && pub.abstract ? (
+                      <motion.div
+                        key="abstract"
+                        initial={{ opacity: 0, height: 0 }}
+                        animate={{ opacity: 1, height: 'auto' }}
+                        exit={{ opacity: 0, height: 0 }}
+                        className="overflow-hidden mt-4"
+                      >
+                        <div className="bg-neutral-50 dark:bg-neutral-800 rounded-lg p-4 border border-neutral-200 dark:border-neutral-700">
+                          <p className="text-sm text-neutral-600 dark:text-neutral-500 leading-relaxed">
+                            {pub.abstract}
+                          </p>
+                        </div>
+                      </motion.div>
+                    ) : null}
+
+                    {/*
+                      ===== BibTeX panel + copy button (DISABLED) =====
+                      Re-enable:
+                      1) remove this comment block
+                      2) also re-enable the BibTeX toggle button above
+                    */}
+                    {/*
+                    {expandedBibtexId === pub.id && pub.bibtex ? (
+                      <motion.div
+                        key="bibtex"
+                        initial={{ opacity: 0, height: 0 }}
+                        animate={{ opacity: 1, height: 'auto' }}
+                        exit={{ opacity: 0, height: 0 }}
+                        className="overflow-hidden mt-4"
+                      >
+                        <div className="relative bg-neutral-50 dark:bg-neutral-800 rounded-lg p-4 border border-neutral-200 dark:border-neutral-700">
+                          <pre className="text-xs text-neutral-600 dark:text-neutral-500 overflow-x-auto whitespace-pre-wrap font-mono">
+                            {pub.bibtex}
+                          </pre>
+                          <button
+                            onClick={() => {
+                              navigator.clipboard.writeText(pub.bibtex || '');
+                            }}
+                            className="absolute top-2 right-2 p-1.5 rounded-md bg-white dark:bg-neutral-700 text-neutral-500 hover:text-accent shadow-sm border border-neutral-200 dark:border-neutral-600 transition-colors"
+                            title="Copy to clipboard"
+                          >
+                            <ClipboardDocumentIcon className="h-4 w-4" />
+                          </button>
+                        </div>
+                      </motion.div>
+                    ) : null}
+                    */}
+                  </AnimatePresence>
                 </div>
-              </motion.div>
-            );
-          })
+              </div>
+            </motion.div>
+          ))
         )}
       </div>
     </motion.div>
