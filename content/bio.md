@@ -2,7 +2,7 @@ I am Zhenyao Ma (马镇尧, Jen-yow Ma), a researcher in human behavior, complex
 - How humans execute behavior and make decisions?
   - Behavioral and experimental economics
 - How complex social systems operate?
-  - Equilibrium theory and complex systems
+  - Equilibrium theory, complex systems, and microeconomic theory
 - Behavioral-science–prior machine learning
 
 
