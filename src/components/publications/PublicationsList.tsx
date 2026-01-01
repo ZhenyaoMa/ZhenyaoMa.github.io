@@ -286,7 +286,7 @@ export default function PublicationsList({ config, publications, embedded = fals
                                                 <BookOpenIcon className="h-3 w-3 mr-1.5" />
                                                 BibTeX
                                             </button>
-                                        )} */ // BibTeX UI disabled (keep for future re-enable)}
+                                        )} */}
                                     </div>
 
                                     <AnimatePresence>
