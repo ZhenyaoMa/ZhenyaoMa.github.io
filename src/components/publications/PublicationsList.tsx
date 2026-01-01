@@ -329,7 +329,8 @@ export default function PublicationsList({ config, publications, embedded = fals
                                                     </button>
                                                 </div>
                                             </motion.div>
-                                        ) : null} */}
+                                        ) : null} 
+                                        */}
                                     </AnimatePresence>
                                 </div>
                             </div>
