@@ -3,6 +3,6 @@ I am Zhenyao Ma (马镇尧, Jen-yow Ma), a researcher in human behavior, complex
   - Behavioral and experimental economics
 - How complex social systems operate?
   - Microeconomic theory, equilibrium theory, and complex systems
-- Machine learning grounded in behavioral science
+- Machine learning grounded in behavioral and social science
 
 
