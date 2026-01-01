@@ -28,9 +28,9 @@ title = "My Research"
 # filter = "selected"
 # limit = 0
 
-[[sections]]
-id = "news"
-type = "list"
-title = "News"
-source = "news.toml"
+# [[sections]]
+# id = "news"
+# type = "list"
+# title = "News"
+# source = "news.toml"
 
