@@ -305,7 +305,7 @@ export default function PublicationsList({ config, publications, embedded = fals
                                                 </div>
                                             </motion.div>
                                         ) : null}
-                                        {expandedBibtexId === pub.id && pub.bibtex ? (
+                                       {/* {expandedBibtexId === pub.id && pub.bibtex ? (
                                             <motion.div
                                                 key="bibtex"
                                                 initial={{ opacity: 0, height: 0 }}
@@ -329,7 +329,7 @@ export default function PublicationsList({ config, publications, embedded = fals
                                                     </button>
                                                 </div>
                                             </motion.div>
-                                        ) : null}
+                                        ) : null} */}
                                     </AnimatePresence>
                                 </div>
                             </div>
