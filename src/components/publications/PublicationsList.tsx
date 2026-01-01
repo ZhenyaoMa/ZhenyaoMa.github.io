@@ -26,7 +26,8 @@ export default function PublicationsList({ config, publications, embedded = fals
     const [selectedYear, setSelectedYear] = useState<number | 'all'>('all');
     const [selectedType, setSelectedType] = useState<string | 'all'>('all');
     const [showFilters, setShowFilters] = useState(false);
-    const [expandedBibtexId, setExpandedBibtexId] = useState<string | null>(null);
+    // const [expandedBibtexId, setExpandedBibtexId] = useState<string | null>(null);
+    // BibTeX UI disabled (keep for future re-enable)
     const [expandedAbstractId, setExpandedAbstractId] = useState<string | null>(null);
 
     // Extract unique years and types for filters
@@ -285,7 +286,7 @@ export default function PublicationsList({ config, publications, embedded = fals
                                                 <BookOpenIcon className="h-3 w-3 mr-1.5" />
                                                 BibTeX
                                             </button>
-                                        )} */}
+                                        )} */ // BibTeX UI disabled (keep for future re-enable)}
                                     </div>
 
                                     <AnimatePresence>
