@@ -9,5 +9,5 @@ I am Zhenyao Ma (马镇尧, Jen-yow Ma), a researcher in human behavior, machine
 
 I am currently an independent researcher and a Master’s student at Xiamen University, supervised by [Prof. Sen Geng](https://sites.google.com/view/sen-geng).
 
-I am currently seeking **PhD or research opportunities**. If you are interested in my research, please feel free to contact me.
+I am currently seeking **PhD or research opportunities** related to AI, human behavior, and cognition. If you are interested in my research, please feel free to contact me.
 
