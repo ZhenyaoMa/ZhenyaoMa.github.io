@@ -6,5 +6,5 @@ I am Zhenyao Ma (马镇尧, Jen-yow Ma), a researcher in human behavior, machine
 - How complex social systems operate?
   - *Complex Social System*
 
-I am currently seeking **PhD or research opportunities** at the intersection of AI and behavioral and cognitive sciences, or AI and the social sciences and economics. If you are interested in my research, please feel free to contact me.
+I am currently seeking **PhD or research opportunities**. If you are interested in my research, please feel free to contact me.
 
