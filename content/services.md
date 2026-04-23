@@ -1,2 +1,2 @@
 - **Reviewer**: NeurIPS (Conference on Neural Information Processing Systems)
-- **Membership**: American Psychological Association (APA); Economic Science Association (ESA)
+- **Membership**: Economic Science Association (ESA); American Psychological Association (APA)
