@@ -4,6 +4,4 @@ description = "Professional services and community involvement."
 
 [[items]]
 title = "Reviewer"
-subtitle = "Journal Name"
-date = "2024"
-content = "Reviewed papers for..."
+subtitle = "NeurIPS (Conference on Neural Information Processing Systems)"
