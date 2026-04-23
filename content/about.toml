@@ -36,6 +36,6 @@ limit = 5
 
 [[sections]]
 id = "service"
-type = "card"
+type = "markdown"
 title = "Academic Service"
-source = "services.toml"
+source = "services.md"
