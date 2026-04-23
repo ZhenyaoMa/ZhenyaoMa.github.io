@@ -36,6 +36,6 @@ limit = 5
 
 [[sections]]
 id = "service"
-type = "list"
+type = "card"
 title = "Academic Service"
 source = "services.toml"
