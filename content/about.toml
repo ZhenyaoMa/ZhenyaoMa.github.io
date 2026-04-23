@@ -34,3 +34,8 @@ limit = 5
 # title = "News"
 # source = "news.toml"
 
+[[sections]]
+id = "service"
+type = "list"
+title = "Academic Service"
+source = "services.toml"
