@@ -1,2 +1,2 @@
-- **Reviewer**: NeurIPS (Conference on Neural Information Processing Systems); ICML(International Conference on Machine Learning)
+- **Reviewer**: NeurIPS (Conference on Neural Information Processing Systems); ICML (International Conference on Machine Learning)
 - **Membership**: Economic Science Association (ESA); American Psychological Association (APA)
