@@ -4,8 +4,9 @@ title = "About"
 [profile]
 research_interests = [
   "Artificial Intelligence",
-  "Behavioral and Cognitive Science",
-  "Complex Social System"
+  "Inverse Optimization",
+  "Behavioral and Cognitive Science"
+  # "Complex Social System"
 ]
 
 [[sections]]
