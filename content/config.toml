@@ -6,8 +6,8 @@ last_updated = "November 18, 2025"
 
 [author]
 name = "Zhenyao Ma"
-title = "Xiamen University"
-institution = "Plokerm AI Lab"
+# title = "Xiamen University"
+institution = "Xiamen University"
 avatar = "/bio.png"
 
 [social]
