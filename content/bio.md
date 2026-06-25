@@ -1,4 +1,4 @@
-I am Ma Zhenyao (马镇尧; pronounced Ma Jen-yow), a researcher in machine learning, inverse optimization, and human behavior. I am curious about, and my research focuses on:
+I am Ma ZhenYao (马镇尧; pronounced Ma Jen-Yow), a researcher in machine learning, inverse optimization, and human behavior. I am curious about, and my research focuses on:
 
 - How can machines learn and model human and social behavior?
 - How do humans think, make decisions, and generate behavior?
