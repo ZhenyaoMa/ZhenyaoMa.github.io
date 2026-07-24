@@ -93,6 +93,7 @@ a:hover { text-decoration: underline; text-underline-offset: 0.16em; }
 .profile-links {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
   margin-top: 1.25rem;
   font-size: 0.98rem;
