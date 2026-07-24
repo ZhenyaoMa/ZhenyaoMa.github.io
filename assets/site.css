@@ -77,10 +77,13 @@ a:hover { text-decoration: underline; text-underline-offset: 0.16em; }
   line-height: 1;
 }
 
+.bio-copy h1 { text-align: center; }
+
 .interests {
   margin: 0 0 1.25rem;
   color: var(--muted);
   font-size: 0.96rem;
+  text-align: center;
 }
 
 .bio-copy p { margin: 0 0 0.95rem; }
@@ -196,7 +199,7 @@ a:hover { text-decoration: underline; text-underline-offset: 0.16em; }
   .bio,
   .project { grid-template-columns: 1fr; }
   .bio { gap: 2.2rem; align-items: start; }
-  .bio-photo-wrap { width: min(250px, 100%); }
+  .bio-photo-wrap { width: min(250px, 100%); justify-self: center; }
   .bio-copy h1 { margin-top: 0; }
   .projects { gap: 4rem; }
   .project { gap: 1.6rem; }
