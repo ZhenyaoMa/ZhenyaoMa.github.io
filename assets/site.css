@@ -130,6 +130,7 @@ a:hover { text-decoration: underline; text-underline-offset: 0.16em; }
 
 .project-media { margin: 0; }
 .project-figure-link { display: block; }
+.project-pdf-link { position: relative; }
 .project-figure {
   display: block;
   width: 100%;
@@ -138,6 +139,15 @@ a:hover { text-decoration: underline; text-underline-offset: 0.16em; }
   border-radius: 0;
   box-shadow: none;
   background: var(--figure-bg);
+}
+.project-pdf-preview {
+  height: 320px;
+  pointer-events: none;
+}
+.project-figure-overlay {
+  position: absolute;
+  inset: 0;
+  display: block;
 }
 .project-figure-note {
   display: block;
