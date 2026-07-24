@@ -1,4 +1,0 @@
-# Blog Test
-
-Hello world.
-
