@@ -26,7 +26,7 @@ a:hover { text-decoration: underline; text-underline-offset: 0.16em; }
 .page,
 .subpage,
 .top-nav {
-  width: min(1160px, calc(100% - 3rem));
+  width: min(1080px, calc(100% - 3rem));
   margin: 0 auto;
 }
 
@@ -47,9 +47,9 @@ a:hover { text-decoration: underline; text-underline-offset: 0.16em; }
 
 .bio {
   display: grid;
-  grid-template-columns: minmax(220px, 300px) minmax(0, 1fr);
+  grid-template-columns: minmax(190px, 250px) minmax(0, 1fr);
   align-items: center;
-  gap: clamp(3rem, 6vw, 5.8rem);
+  gap: clamp(2.6rem, 5vw, 4.8rem);
 }
 
 .bio-photo-wrap {
@@ -60,7 +60,7 @@ a:hover { text-decoration: underline; text-underline-offset: 0.16em; }
 .bio-photo {
   display: block;
   width: 100%;
-  max-width: 300px;
+  max-width: 250px;
   height: auto;
   border: 0;
   border-radius: 0;
@@ -71,7 +71,7 @@ a:hover { text-decoration: underline; text-underline-offset: 0.16em; }
 .bio-copy h1,
 .page-title {
   margin: -0.04em 0 1.05rem;
-  font-size: clamp(3rem, 5vw, 4.25rem);
+  font-size: clamp(2.15rem, 3.1vw, 2.9rem);
   font-weight: 400;
   letter-spacing: -0.04em;
   line-height: 1;
@@ -105,7 +105,7 @@ a:hover { text-decoration: underline; text-underline-offset: 0.16em; }
 .section { margin-top: clamp(4.5rem, 8vw, 7rem); }
 .section h2 {
   margin: 0 0 1.8rem;
-  font-size: clamp(2.35rem, 4vw, 3.5rem);
+  font-size: clamp(1.65rem, 2.35vw, 2.15rem);
   font-weight: 400;
   letter-spacing: -0.035em;
   line-height: 1.03;
@@ -123,9 +123,9 @@ a:hover { text-decoration: underline; text-underline-offset: 0.16em; }
 .projects { display: grid; gap: clamp(3.5rem, 6vw, 5.5rem); }
 .project {
   display: grid;
-  grid-template-columns: minmax(280px, 0.9fr) minmax(0, 1.55fr);
+  grid-template-columns: minmax(235px, 0.82fr) minmax(0, 1.65fr);
   align-items: start;
-  gap: clamp(2.4rem, 4.5vw, 4.5rem);
+  gap: clamp(2rem, 3.8vw, 3.8rem);
 }
 
 .project-media { margin: 0; }
@@ -143,14 +143,14 @@ a:hover { text-decoration: underline; text-underline-offset: 0.16em; }
   display: block;
   margin-top: 0.4rem;
   color: #777c84;
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   line-height: 1.35;
 }
 
 .project-body { padding-top: 0; }
 .project-title {
   margin: 0 0 0.32rem;
-  font-size: clamp(1.75rem, 2.8vw, 2.4rem);
+  font-size: clamp(1.32rem, 1.75vw, 1.7rem);
   font-weight: 700;
   letter-spacing: -0.025em;
   line-height: 1.1;
@@ -204,7 +204,7 @@ a:hover { text-decoration: underline; text-underline-offset: 0.16em; }
   .bio,
   .project { grid-template-columns: 1fr; }
   .bio { gap: 2.2rem; align-items: start; }
-  .bio-photo-wrap { width: min(300px, 100%); }
+  .bio-photo-wrap { width: min(250px, 100%); }
   .bio-copy h1 { margin-top: 0; }
   .projects { gap: 4rem; }
   .project { gap: 1.6rem; }
@@ -215,7 +215,7 @@ a:hover { text-decoration: underline; text-underline-offset: 0.16em; }
   .top-nav { justify-content: flex-start; gap: 1rem; padding-top: 1.05rem; }
   .page { padding-top: 1.75rem; }
   .bio-copy h1,
-  .page-title { font-size: clamp(2.7rem, 14vw, 3.7rem); }
-  .section h2 { font-size: clamp(2.15rem, 11vw, 3rem); }
-  .project-title { font-size: 1.8rem; }
+  .page-title { font-size: clamp(2rem, 10vw, 2.65rem); }
+  .section h2 { font-size: clamp(1.65rem, 8vw, 2.1rem); }
+  .project-title { font-size: 1.4rem; }
 }
