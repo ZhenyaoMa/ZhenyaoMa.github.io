@@ -208,6 +208,29 @@ a:hover { text-decoration: underline; text-underline-offset: 0.16em; }
   text-align: right;
 }
 .research-section { margin-top: clamp(3.5rem, 6vw, 5rem); }
+.research-disclosure > summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem;
+  cursor: pointer;
+  list-style: none;
+}
+.research-disclosure > summary::-webkit-details-marker { display: none; }
+.research-disclosure > summary::after {
+  content: "+";
+  flex: 0 0 auto;
+  color: var(--muted);
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 1;
+}
+.research-disclosure[open] > summary::after { content: "−"; }
+.research-disclosure > summary h2 { margin-bottom: 1.8rem; }
+.research-disclosure > summary:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 0.35rem;
+}
 .research-intro {
   max-width: none;
   margin: -0.45rem 0 2.75rem;
